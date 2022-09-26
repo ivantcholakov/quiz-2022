@@ -1,5 +1,5 @@
 # quiz-2022
-A political questionnaire - 2022
+A Political Questionnaire - 2022
 
 [Preview the Page](https://ivantcholakov.github.io/quiz-2022/quiz-2022.html)
 
