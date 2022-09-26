@@ -27,7 +27,7 @@ body{
     padding-right: 40px;
 }
 
-#quiz-submit, #quiz-end {
+#quiz-submit, #quiz-end, #quiz-back {
     height: 45px!important;
     width: 100%!important;
     color: #fff;
@@ -494,6 +494,14 @@ window.addEventListener('load', (event) => {
 
         location.reload();
     });
+
+    try {
+
+        if ((1 < history.length) && document.referrer ) {
+            
+        }
+
+    } catch {}
 });
 
         </script>
@@ -568,6 +576,10 @@ window.addEventListener('load', (event) => {
 
             <p style="margin-top: 40px;"><button type="button" id="quiz-end">Благодарим Ви!</button></p>
 
+        </div>
+
+        <div id="back-container" style="display: none;">
+            <p style="margin-top: 20px;"><button type="button" id="quiz-back" onclick="history.go(-1); return false;">&lt;-- Обратно</button></p>
         </div>
 
     </body>
