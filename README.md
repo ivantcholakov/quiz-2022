@@ -5,4 +5,4 @@ A political questionnaire - 2022
 
 [Download the Whole Project](https://github.com/ivantcholakov/quiz-2022/archive/refs/heads/main.zip)
 
-[Download Only the File quiz-2022.html](https://raw.githubusercontent.com/ivantcholakov/quiz-2022/main/quiz-2022.html){:download="quiz-2022.html"}
+<a href="https://raw.githubusercontent.com/ivantcholakov/quiz-2022/main/quiz-2022.html" download="quiz-2022.html">Download Only the File quiz-2022.html</a>
