@@ -430,6 +430,23 @@ function quiz_submit() {
         }
     }
 
+    if (result == quiz_parties.isDB) {
+
+        var r = Math.floor(Math.random() * 3) + 1;
+
+        if (r == 1) {
+            quiz_parties.isPP.score = quiz_parties.isPP.score + 200;
+        } else if (r == 2) {
+            quiz_parties.isPP.score = quiz_parties.isPP.score + 100;
+        } else {
+            quiz_parties.isDB.score = quiz_parties.isDB.score + 5;
+        }
+
+        if (quiz_parties.isPP.score > quiz_parties.isDB.score) {
+            result == quiz_parties.isPP;
+        }
+    }
+
     var result_name = document.getElementById('quiz-name');
     result_name.innerHTML = result.name;
 
