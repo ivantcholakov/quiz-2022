@@ -96,11 +96,13 @@ var quiz_questions = [
             },
             {
                 answer: 'Не, те не си спазват договора',
-                isDB: 10
+                isDB: 10,
+                isPP: 10
             },
             {
                 answer: 'Ще купуваме американски',
-                isDB: 10
+                isDB: 10,
+                isPP: 10
             },
             {
                 answer: 'Не мога да преценя'
@@ -127,7 +129,8 @@ var quiz_questions = [
             },
             {
                 answer: 'Да, възможно най-скоро',
-                isDB: 10
+                isDB: 10,
+                isPP: 10
             },
             {
                 answer: 'Не мога да преценя'
@@ -220,7 +223,8 @@ var quiz_questions = [
             },
             {
                 answer: 'Десни',
-                isDB: 10
+                isDB: 10,
+                isPP: 10
             },
             {
                 answer: 'Центристки',
@@ -247,7 +251,8 @@ var quiz_questions = [
             },
             {
                 answer: 'Антикорупционната',
-                isDB: 10
+                isDB: 10,
+                isPP: 10
             },
             {
                 answer: 'Образователната',
@@ -423,23 +428,6 @@ function quiz_submit() {
 
             score_max = quiz_parties[k].score;
             result = quiz_parties[k];
-        }
-    }
-
-    if (result == quiz_parties.isDB) {
-
-        var r = Math.floor(Math.random() * 3) + 1;
-
-        if (r == 1) {
-            quiz_parties.isPP.score = quiz_parties.isPP.score + 200;
-        } else if (r == 2) {
-            quiz_parties.isPP.score = quiz_parties.isPP.score + 100;
-        } else {
-            quiz_parties.isDB.score = quiz_parties.isDB.score + 5;
-        }
-
-        if (quiz_parties.isPP.score > quiz_parties.isDB.score) {
-            result = quiz_parties.isPP;
         }
     }
 
