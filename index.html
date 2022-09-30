@@ -464,6 +464,22 @@ function quiz_submit() {
     }
 }
 
+function inIFrame() {
+
+    try {
+
+        if (window.location !== window.parent.location) {
+
+            return true;
+        }
+
+        return false;
+
+    } catch {}
+
+    return false;
+}
+
 window.addEventListener('load', (event) => {
 
     quiz_render();
@@ -496,13 +512,16 @@ window.addEventListener('load', (event) => {
         location.reload();
     });
 
-    try {
+    if (!inIFrame()) {
 
-        if (1 < history.length) {
-            document.getElementById('back-container').style.display = 'block';
-        }
+        try {
 
-    } catch {}
+            if (1 < history.length) {
+                document.getElementById('back-container').style.display = 'block';
+            }
+
+        } catch {}
+    }
 });
 
         </script>
